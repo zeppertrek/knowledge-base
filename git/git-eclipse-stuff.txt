@@ -1,0 +1,23 @@
+1. Starting from scratch
+------------------------
+
+>> create a repository (remote) on GITHUB (preferred, you can create the repository on any other server as well)
+>> Clone this repository to your local machine
+>> Ensure that the repository is created in the same folder that your eclipse project will use
+>> Create the project in Eclipse
+>> Add files to the Index
+>> Commit 
+>> Push Upstream
+
+
+2. You have a local repository and this needs to get pushed into GITHUB (preferred, you can create the repository on any other server as well)
+------------------------
+>> Create the local repository
+>> Commit your Eclipse project into it
+>> Create repository in GITHUB
+
+NOTE - Your local repository and the one on GITHUB do not have anything in common
+
+>> git merge  <remote name>/master --allow_unrelated_histories
+>> git push --set_upstream <remote name> master
+   
