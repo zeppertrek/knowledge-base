@@ -1,0 +1,40 @@
+1. Zookeeper - Standalone or the one bundled with Kafka
+--------------------------------------------------------
+Use the standalone one.
+Set ZOOKEEPER_HOME and the Path
+rename zoo_sample.cfg to zoo.cfg and modify the file (datadir setting)
+### The work involved in using the standalone version over the bundled one is not really too much
+Start Zookeeper (default port 2181)
+
+2. Configuring and running Kafka
+---------------------------------
+Kafka must have a running Zookeeper instance 
+
+modify server.properties file to set the log directory location 
+From the Kafka installation directory run 
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+3. Verifying that your Kafka installation is actually up and running
+---------------------------------------------------------------------
+>> Create a topic [a key concept in Kafka]
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic zeppertrekker
+(Make sure that you are in the <<Kafka installation directory>>\bin\windows folder)
+
+>> Produce and consume a message from the command line
+Open two separate command line windows 
+
+-- The producer from where one can post messages 
+kafka-console-producer.bat --broker-list localhost:9092 --topic zeppertrekker
+
+--The consumer from where one actually sees the messages 
+kafka-console-consumer.bat --zookeeper localhost:2181 --topic zeppertrekker
+
+{{For the consumer ignore "Using the ConsoleConsumer with old consumer is deprecated and will be removed in a future major release. Consider using the new consumer by passing [bootstrap-server] instead of [zookeeper].
+this is message 1 from a zeppertrekker" }}
+
+
+
+
+
+
+
