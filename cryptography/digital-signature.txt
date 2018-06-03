@@ -1,0 +1,13 @@
+1. A digital signature should not be confused with a digital certificate
+
+2. A digital signature can be used to validate the authenticity and integrity of data/information 
+
+3. The data that is being digitally signed does not have to be encrypted 
+
+4. a. The sender will hash the data 
+[HASH - 
+
+b. The hash is encrypted with the sender's private kety
+
+c. data and encrypted hash will be sent to the recipient
+
