@@ -1,13 +1,17 @@
 1. A digital signature should not be confused with a digital certificate
 
 2. A digital signature can be used to validate the authenticity and integrity of data/information 
+   [Sender's identity, that the message has not been tampered with, non repudiation]
 
 3. The data that is being digitally signed does not have to be encrypted 
 
 4. a. The sender will hash the data 
-[HASH - 
+[HASH - Hashing refers to the concept of taking an arbitrary amount of input data, applying some algorithm to it, and generating a fixed-size output data called the hash.]
 
-b. The hash is encrypted with the sender's private kety
+  b. The hash is encrypted with the sender's private key
 
-c. data and encrypted hash will be sent to the recipient
+  c. Data and the encrypted hash will be sent to the recipient
+
+5. I have three suppliers - Each supplier will sign their digital deliveries using their own private key
+   I will have the public keys of all three suppliers. Using this I can verify the digital signature
 
