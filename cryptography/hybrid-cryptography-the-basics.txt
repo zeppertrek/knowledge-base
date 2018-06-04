@@ -1,0 +1,6 @@
+Hybrid Cryptography is an approach used in many places 
+
+1. Use a shared (symmetric - AES) key algorithm to encrypt the file 
+2. Use public key (asymmetric) algorithm to encrypt the SHARED key [Recipient will provide the public key]
+3. Recipient will use the private key to decrypt the symmetric key
+4. Using the symmetric key, the data can be decrypted by the recipient 
