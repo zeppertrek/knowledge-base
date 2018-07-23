@@ -1,0 +1,2 @@
+Developing extensions for Magento
+---------------------------------
