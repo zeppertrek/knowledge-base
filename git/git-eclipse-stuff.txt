@@ -9,6 +9,11 @@
 >> Commit 
 >> Push Upstream
 
+       1a. Coming back to the same project after many many months 
+           The repository is on GitHub
+           The project has been deleted from the local file system 
+            -- Clone the repository once again and repeat the steps as described above
+
 
 2. You have a local repository and this needs to get pushed into GITHUB (preferred, you can create the repository on any other server as well)
 ------------------------
