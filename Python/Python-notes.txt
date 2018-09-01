@@ -1,0 +1,22 @@
+1. Installed Python
+2. Pip did not get installed [Why is this so important ?]
+
+3. Download https://bootstrap.pypa.io/get-pip.py
+
+4.python get-pip.py
+
+5. >pip --version  [Make sure that the PATH environment variable is properly set]
+
+6. What is WHEEL ?
+
+7. pip install virtualenvwrapper-win
+
+{{virtualenv is a tool to create isolated Python environments.}}
+
+{{ virtualenv and virtualenvwrapper provide a dedicated environment for each Django project you create. While not mandatory, this is considered a best practice and will save you time in the future when you’re ready to deploy your project. }}
+
+8. mkvirtualenv myproject
+{{ This does a lot.  Needs to be explored and understood }} 
+
+9. Where and how does Python store information about virtual environments ? 
+
