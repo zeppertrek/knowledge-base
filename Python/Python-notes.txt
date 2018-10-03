@@ -9,6 +9,7 @@
 4.python get-pip.py
 
 5. >pip --version  [Make sure that the PATH environment variable is properly set]
+   >> Issues encountered when installing certain packages on Windows 
 
 6. What is WHEEL ?
 
@@ -18,15 +19,54 @@
   >> virtualenv and virtualenvwrapper provide a dedicated environment for each Django project you create. 
   >> not mandatory, this is considered a best practice and will save you time in the future when you’re ready to deploy your project. }}
 
-8. mkvirtualenv myproject
+8. a.))) mkvirtualenv myproject
    >> This does a lot.  Needs to be explored and understood
    >> One Python installation in most cases will not be sufficient to meet the requirements of every application
-   >> Aself-contained directory tree that contains a Python installation for a particular version of Python, plus a number of additional packages
+   >> A self-contained directory tree that contains a Python installation for a particular version of Python, plus a number of additional packages
    >> Explore - venv for creating virtual environments 
+   
+   >> lsvirtualenv : Lists all the virtual environments
+   >> rmvirtualenv : removes a virtual environment 
+   >> On Windows, by default, python creates virtual environment under "C:/users/<userid>/envs" -- hardcoded ?
+   
+   
+   b.))) Recommended 
+   
+   >> python -m venv D:/workspaces/pyprojects/pySandPit
+   >> C:\> <venv>\Scripts\activate.bat / deactivate.bat 
+   
+   
+   c.))) Storing in version control along with dependencies 
+   
 
 9. Where and how does Python store information about virtual environments ? 
+   >> By default does it look into "C:/users/<userid>/envs" -- hardcoded ?
+   
 
 11. deactivate and workon commands
 
 12. Linking the virtual environment folder to a proper dev folder 
 
+13. The >>> is Python's way of telling you that you are in interactive mode.   {Can scripts be run in interactive mode ?}
+    >> python -i  <script name>
+In interactive mode what you type is immediately run. Try typing 1+1 in. 
+Python will respond with 2. Interactive mode allows you to test out and see what Python will do. 
+If you ever feel the need to play with new Python statements, go into interactive mode and try them out.
+
+
+14. Unit testing frameworks, Dependency Injection, Multi threading, Debugging and Profiling, Project Structures, Exception handling
+    -- unittest is a standard module
+	-- apparently DI is not so important in Py - Check
+	-- 
+
+15. Classes and Objects in Python  
+    -- There might not be the equivalent of Java interfaces in Python 
+    -- Concept of Abstract classes (ABCs) in Python  - Available 
+    -- Inheritance - Available 	
+
+16. Annotations in Python 
+
+17. PEP8 - Style guide for Python code 
+	
+	
+	

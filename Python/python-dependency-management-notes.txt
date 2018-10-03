@@ -1,0 +1,20 @@
+Python Dependency Management
+(quickly setting up a working environment, cloning environments)
+----------------------------------------------------------------
+
+A. pip [Commonly used]
+   >> A tool for installing Python packages.
+
+B. Pipenv
+   >> Pipenv is a project that aims to bring the best of all packaging worlds to the Python world. 
+   >> It harnesses Pipfile, pip, and virtualenv into one single toolchain. It features very pretty terminal colors.
+
+C. Pipfile
+   >> Pipfile and its sister Pipfile.lock are a higher-level application-centric alternative to pip’s lower-level requirements.txt file.
+   
+   
+D. Does Python have a Maven equivalent ?
+
+E. What does setup.py do ?
+
+F. Replicating a Python project which is on machineXXX to a number of other developer machines 

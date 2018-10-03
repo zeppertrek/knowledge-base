@@ -1,0 +1,7 @@
+Python project structures
+--------------------------
+
+
+<<Root folder of the Python project>>
+
+
